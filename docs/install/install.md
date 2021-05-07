@@ -10,19 +10,19 @@ Firstly, install `golang` from [the official golang donwload page](https://golan
 Be sure to set your `$GOPATH`, `$GOBIN`, and `$PATH` environment variables, for example:
 
 ```sh
-mkdir -p $HOME/go/bin
-echo "export GOPATH=$HOME/go" >> ~/.bashrc
-echo "export GOBIN=$GOPATH/bin" >> ~/.bashrc
-echo "export PATH=$PATH:$GOBIN" >> ~/.bashrc
-echo "export GO111MODULE=on" >> ~/.bashrc
-source ~/.bashrc
+echo '#golang' >> ~/.bashrc
+echo 'export PATH="$PATH:/usr/local/go/bin"' >> ~/.bashrc
+echo 'export GOPATH="$HOME/go"' >> ~/.bashrc
+echo 'export PATH="$PATH:$GOPATH/bin"' >> ~/.bashrc
+echo 'export GOBIN=$GOPATH/bin' >> ~/.bashrc
+echo 'export GO111MODULE=on' >> ~/.bashrc
 ```
 
 Verify that `golang` has been installed successfully.
 
 ```sh
 $ go version
-go version go1.13.7 linux/amd64
+go version go1.16.3 linux/amd64
 ```
 
 
